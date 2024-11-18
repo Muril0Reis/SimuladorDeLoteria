@@ -1,0 +1,7 @@
+loterias.py: Contém todas as funções responsáveis pela geração de números aleatórios para cada tipo de loteria. Aqui temos funções como mega_sena(), quina(), lotofacil() e gerar_numeros().
+validacao.py: A função validar_entrada() está aqui, para garantir que os números fornecidos pelo usuário estejam no intervalo certo e com a quantidade correta.
+resultado.py: Contém as funções comparar_numeros() e exibir_resultado(), que comparam os números sorteados com os informados pelo usuário e exibem os resultados.
+main.py: O arquivo principal, onde o fluxo do programa é gerido. O menu exibe as opções para o usuário escolher o tipo de loteria, recebe a entrada do usuário, valida os números e exibe o resultado.
+
+Números separados por vírgula ou espaço: 
+O usuário pode inserir os números de diferentes maneiras: com espaços entre os números, com vírgulas separando-os ou até mesmo sem nenhum tipo de separação, o que permite que os números sejam digitados de forma contínua, um após o outro. No processo de tratamento da entrada, se forem detectadas vírgulas, elas são automaticamente substituídas por espaços, garantindo que a divisão dos números seja feita corretamente.
