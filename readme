@@ -1,7 +1,43 @@
-loterias.py: Contém todas as funções responsáveis pela geração de números aleatórios para cada tipo de loteria. Aqui temos funções como mega_sena(), quina(), lotofacil() e gerar_numeros().
-validacao.py: A função validar_entrada() está aqui, para garantir que os números fornecidos pelo usuário estejam no intervalo certo e com a quantidade correta.
-resultado.py: Contém as funções comparar_numeros() e exibir_resultado(), que comparam os números sorteados com os informados pelo usuário e exibem os resultados.
+Simulador de Loteria
+Este é um projeto de um simulador de loteria, onde o usuário pode gerar números para diferentes tipos de loterias (Mega-Sena, Quina, Lotofácil), inserir seus próprios números e verificar se ganhou.
+
+Arquivos
+interface.py: Este arquivo contém a interface gráfica do usuário (GUI) desenvolvida com Tkinter. Ele permite que o usuário selecione o tipo de loteria (Mega-Sena, Quina ou Lotofácil), insira seus números e veja os resultados de uma forma interativa. A interface também exibe imagens correspondentes a cada tipo de loteria e utiliza cores diferentes para cada uma delas.
+
+loterias.py: Contém todas as funções responsáveis pela geração de números aleatórios para cada tipo de loteria. Aqui estão as funções mega_sena(), quina(), lotofacil() e gerar_numeros(), que geram os números sorteados de acordo com as regras de cada loteria.
+
+validacao.py: Contém a função validar_entrada(), que verifica se os números fornecidos pelo usuário estão no intervalo correto e se a quantidade de números está de acordo com a loteria escolhida.
+
+resultado.py: Contém as funções comparar_numeros() e exibir_resultado(), que comparam os números sorteados com os informados pelo usuário e exibem os resultados (quantidade de acertos e se o usuário ganhou ou não).
+
 main.py: O arquivo principal, onde o fluxo do programa é gerido. O menu exibe as opções para o usuário escolher o tipo de loteria, recebe a entrada do usuário, valida os números e exibe o resultado.
 
-Números separados por vírgula ou espaço: 
+Como Usar
+Execute o arquivo interface.py para abrir a interface gráfica.
+
+Na interface gráfica, você poderá escolher o tipo de loteria entre Mega-Sena, Quina e Lotofácil.
+
+Digite seus números nos campos de entrada. Você pode digitar os números separados por espaços ou vírgulas. O formato é flexível, e a entrada será tratada para garantir que os números sejam processados corretamente.
+
+Após inserir os números, clique no botão "Jogar" para gerar os números sorteados e verifique se você acertou algum número.
+
+O resultado será exibido abaixo, indicando a quantidade de acertos e se você ganhou.
+
+Números separados por vírgula ou espaço
 O usuário pode inserir os números de diferentes maneiras: com espaços entre os números, com vírgulas separando-os ou até mesmo sem nenhum tipo de separação, o que permite que os números sejam digitados de forma contínua, um após o outro. No processo de tratamento da entrada, se forem detectadas vírgulas, elas são automaticamente substituídas por espaços, garantindo que a divisão dos números seja feita corretamente.
+
+Estrutura do Projeto
+graphql
+Copiar código
+- interface.py      # Interface gráfica com Tkinter
+- loterias.py       # Funções para geração dos números sorteados
+- validacao.py      # Função de validação de entrada
+- resultado.py      # Funções para comparar e exibir resultados
+- main.py           # Fluxo principal do programa
+- mega_sena.png     # Imagem representando a Mega-Sena
+- quina.png         # Imagem representando a Quina
+- lotofacil.png     # Imagem representando a Lotofácil
+- README.md         # Documentação do projeto
+
+Licença
+Este projeto é licenciado sob a MIT License.
